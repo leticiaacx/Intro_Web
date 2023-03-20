@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import MeusDados from './components/atividade00/02MeusDados';
 
 function App() {
   return (
-    <div className="App">
-    <h1> Letícia </h1>
-    </div>
+    <MeusDados 
+      nome = "Letícia Pinheiro de Oliveira"
+      curso = "Sistemas de Informação"
+      uni = "UFC"
+    
+    
+    />
+
   );
 }
 

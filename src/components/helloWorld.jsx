@@ -38,7 +38,7 @@ class HelloW extends React.Component {
         return(
             <div>
                 <h1> Leticia </h1>
-                <h2> Sistemas de Informação </h2>
+                <h1> Sistemas de Informação </h1>
             </div>
         )
     }
