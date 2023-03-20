@@ -7,8 +7,6 @@ function App() {
       nome = "Letícia Pinheiro de Oliveira"
       curso = "Sistemas de Informação"
       uni = "UFC"
-    
-    
     />
 
   );
