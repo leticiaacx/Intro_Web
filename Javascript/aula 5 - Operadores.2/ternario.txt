@@ -1,0 +1,3 @@
+? , :
+teste ? true : false 
+média >= ? "Aprovado" : "Reprovado"

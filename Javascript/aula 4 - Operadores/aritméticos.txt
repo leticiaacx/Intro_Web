@@ -1,0 +1,14 @@
++
+-
+*
+/ - divisão real
+% - resto da divisão por inteiros
+** - potencia
+
+ordem
+()
+**
+* ; / ; %
++ -
+_______________________________________
+
