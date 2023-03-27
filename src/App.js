@@ -1,15 +1,17 @@
-import './components/Funcaonterna/styles.css';
+import './App.css';
 //import MeusDados from './components/atividade00/02MeusDados';
 //import Temperatura from './components/atividade00/03Temperatura';
-//import Pai from './components/atividade01/questão01/01Pai';
-//import * as PC from './components/atividade01/questão01/questao02'
-//import * as Batalha from "./components/atividade01/03Hero"
-import Calculadora from './components/Funcaonterna/calculadora';
+// import Calculadora from './components/Funcaonterna/calculadora';
+import MyProps from './components/Funcaonterna/MyProps';
 
 function App() {
   return (
-    <Calculadora/>
+    <MyProps 
+      nome="Letícia Pinheiro"
+      idade={21}
+      curso="SI" 
+    />
   );
-}
+} 
 
 export default App;
