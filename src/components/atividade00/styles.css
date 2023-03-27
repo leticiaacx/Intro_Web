@@ -1,5 +1,12 @@
 .sty {
     font-size: large;
-    color: rgb(155, 127, 255);
-    background-color: rgb(130, 238, 236);
+    color: rgb(70, 61, 102);
+    background-color: rgba(130, 238, 236, 0.622);
+    text-align: center;
+}
+
+.p{
+    font-size: large;
+    color: rgb(221, 174, 113);
+    text-align: center;
 }
