@@ -1,0 +1,21 @@
+.centering {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(139, 198, 130);
+}
+
+h1{
+
+    color: rgb(209, 59, 59);
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h3{
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
