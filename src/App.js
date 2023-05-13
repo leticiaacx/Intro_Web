@@ -7,12 +7,13 @@ import './App.css';
 //import {Header,Body,Footer} from './components/Funcaonterna/MultiplosComponentes';
 //import { Supermercado, Legumes, Frutas, Bebidas } from './components/Hierarquia/06Children';
 //import FuncaoA from './components/Contexto/FuncaoA';
-import SaveData from './components/LocalSession/LocalStorage';
+//import SaveData from './components/LocalSession/LocalStorage';
+import Pai from './components/Pai&filho/Pai';
 
 function App() {
   return (
-    <div class="centering">
-      <SaveData/>
+    <div className="App">
+      < Pai/>
     </div>
    
   );
