@@ -8,7 +8,7 @@ import './App.css';
 //import { Supermercado, Legumes, Frutas, Bebidas } from './components/Hierarquia/06Children';
 //import FuncaoA from './components/Contexto/FuncaoA';
 //import SaveData from './components/LocalSession/LocalStorage';
-import Pai from './components/Pai&filho/Pai';
+import Pai from './components/08Pai&filho/Pai';
 
 function App() {
   return (
