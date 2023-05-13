@@ -8,12 +8,13 @@ import './App.css';
 //import { Supermercado, Legumes, Frutas, Bebidas } from './components/Hierarquia/06Children';
 //import FuncaoA from './components/Contexto/FuncaoA';
 //import SaveData from './components/LocalSession/LocalStorage';
-import Pai from './components/08Pai&filho/Pai';
+//import Pai from './components/08Pai&filho/Pai';
+import FunctionEstados from './components/09Estados/FuncionEstados';
 
 function App() {
   return (
     <div className="App">
-      < Pai/>
+      < FunctionEstados/>
     </div>
    
   );
