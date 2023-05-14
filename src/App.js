@@ -9,12 +9,13 @@ import './App.css';
 //import FuncaoA from './components/Contexto/FuncaoA';
 //import SaveData from './components/LocalSession/LocalStorage';
 //import Pai from './components/08Pai&filho/Pai';
-import FunctionEstados from './components/09Estados/FuncionEstados';
+//import FunctionEstados from './components/09Estados/FuncionEstados';
+import PokemonAxios from './components/10Axios/pokemonAxios';
 
 function App() {
   return (
     <div className="App">
-      < FunctionEstados/>
+      < PokemonAxios/>
     </div>
    
   );

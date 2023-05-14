@@ -1,8 +1,19 @@
 .App {
-  text-align: center;
+  /*text-align: center;
   justify-content: center;
-  background-color: rgb(139, 198, 130);
+  background-color: rgb(180, 179, 179);*/
   font-family: times;
+}
+
+body {
+  height: 102vh;
+  width: 60%;
+  background-image: url("./components/10Axios/pokedex.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
