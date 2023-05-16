@@ -1,0 +1,57 @@
+Basicamente, os hooks são funções especiais que permitem que você use o estado e outros recursos 
+do react em componentes funcionais, sem a necessidade de escrever uma classe.
+E eles são importantes no react porque oferecem uma maneira simples, intuitiva e poderosa de lidar com o estado
+os efeitos colaterais e a reutilização de lógica em componentes funcionais.
+Eles ajudam a melhorar a legibilidade do código, tornando o desenvolvimento mais eficiente.
+
+Agora vou falar sobre os dois exemplos. Bem, há dois hooks bem populares "useState" e o "useEffect".
+
+1.O "useState" permite adicionar estado a um componente funcional. Ele retorna um par de valores: o estado atual e uma função para atualizar. 
+Ex: import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+}
+
+2. O "useEffect" permite realizar efeitos colaterais em componentes funcionais, 
+como buscar dados de uma API, atualizar o título da página, subscrever ou cancelar inscrições, entre outros. 
+Ex: import React, { useState, useEffect } from 'react';
+
+function UserProfile() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // Simulando uma requisição assíncrona para buscar dados do usuário
+    const fetchUser = async () => {
+      const response = await fetch('https://api.example.com/user');
+      const data = await response.json();
+      setUser(data);
+    };
+
+    fetchUser(); // Chamando a função para buscar os dados do usuário
+
+    // Função de limpeza (opcional) para cancelar a requisição ou liberar recursos
+    return () => {
+      // Código de limpeza, se necessário
+    };
+  }, []); // Array de dependências vazio para executar o efeito apenas uma vez
+
+  if (!user) {
+    return <p>Loading...</p>;
+  }
+
+  return <div>{user.name}</div>;
+}
+
+
