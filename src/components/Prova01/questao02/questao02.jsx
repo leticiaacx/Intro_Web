@@ -1,29 +1,38 @@
-import { useState } from "react";
-import frente from "./frente.png"
-import costa from "./costas.png";
+import { useState, useEffect} from "react";
 const Questao02 = () => {
-    //variavel para verificar se o pokemon está virado ou não
-    const [virou, setVirou] = useState(false);
-    //variavel para verificar qual imagem será exibida
-    const [img, setImg] = useState(frente);
 
-    //função para virar o pokemon
-    const virar = () => {
-        console.log("ola");
-        if (virou == false) {
-            setVirou(true);
-            setImg(costa);
-        } else {
-            setVirou(false);
-            setImg(frente);
-        }
-    };
+    //criando variaveis de estado para armazenar a imagem de frente ou de costas
+    //a variaveld e estado virou dirá true para imagem de frente ou false
+    const [img, setImg] = useState("")
+    const [virou, setVirou] = useState(false)
+
+    const frontImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png`
+    const backImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png`
+
+    useEffect(
+        //funcao que será ativada quando a variavel abaixo for modificada
+        () => {
+            if (virou === true) setImg(frontImg)
+            else setImg(backImg)
+        },
+        //variavel que será observada
+        [virou]
+    )
+
+    //funcao que será acionada com o evento onClick do button em JSX
+    const virouImg = () => {
+        if (virou === true) setVirou(false)
+        else setVirou(true)
+    }
+
     return (
         <div>
-            <img style={{ width: "250px" }} src={img}></img>
-            <button onClick={virar}>Virar</button>
+            <img src={img} style={{ width: "350px" }} />
+            <button
+                onClick={virouImg}
+            >Virar</button>
         </div>
-    );
-};
+    )
+}
 
 export default Questao02;

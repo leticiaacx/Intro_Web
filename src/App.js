@@ -1,4 +1,5 @@
 import './App.css';
+// import Questao02 from './components/Prova01/questao02/questao02';
 //import MeusDados from './components/atividade00/02MeusDados';
 //import Temperatura from './components/atividade00/03Temperatura';
 // import Calculadora from './components/Funcaonterna/calculadora';
@@ -12,12 +13,14 @@ import './App.css';
 //import FunctionEstados from './components/09Estados/FuncionEstados';
 //import PokemonAxios from './components/10Axios/pokemonAxios';
 //import TelaPrincipal from './components/11Redux/v1/TelaPrincipal';
-import Questao02 from './components/Prova01/questao02/questao02';
+// import Questao03 from './components/Prova01/questao03/questao03';
+// import { Questao01X } from './components/Prova01/questao01/questao1x';
+import Questao01X from './components/Prova01/questao01/questao1x';
 
 function App() {
   return (
     <div className="App">
-      < Questao02/>
+      <Questao01X/>
     </div>
    
   );
