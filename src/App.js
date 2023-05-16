@@ -10,12 +10,14 @@ import './App.css';
 //import SaveData from './components/LocalSession/LocalStorage';
 //import Pai from './components/08Pai&filho/Pai';
 //import FunctionEstados from './components/09Estados/FuncionEstados';
-import PokemonAxios from './components/10Axios/pokemonAxios';
+//import PokemonAxios from './components/10Axios/pokemonAxios';
+//import TelaPrincipal from './components/11Redux/v1/TelaPrincipal';
+import Questao02 from './components/Prova01/questao02/questao02';
 
 function App() {
   return (
     <div className="App">
-      < PokemonAxios/>
+      < Questao02/>
     </div>
    
   );
